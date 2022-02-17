@@ -1,0 +1,25 @@
+/* 
+css function인 linear-gradient()를 쓰기 위해서는 style의 속성을 style.backgroundImage로 해야함.
+const body = document.body;
+📌 linear-gradient()의 첫번째 인자로 turn을 쓸 경우, 
+linear-gradient(0.nn, color1, color2);
+body.style.backgroundImage = `linear-gradient(0.25turn, ${color_1}, ${color_2})`;
+0.25turn : color_1 -> color_2 순으로 gradient 됨.
+0.5turn : color_1 | 
+            ⬇
+          color_2 순으로 gradient 됨.
+0.75turn : color_2 -> color_1 순으로 gradient 됨.
+0.0turn : color_2 | 
+            ⬇
+          color_1 순으로 gradient 됨. 
+turn 앞의 숫자가 각도 역할. 틀고 싶은 각도 만큼 숫자를 설정 
+📌 linear-gradient()의 첫번째 인자로 'to 방향' 을 쓸 경우, 
+linear-gradient(to 방향, color1, color2);
+body.style.backgroundImage = `linear-gradient(to left, ${color_1}, ${color_2})`;
+to left : color_2 <- color_1 모양으로 gradient
+to right : color_1 -> color_2 모양으로 gradient
+📌 linear-gradient()의 첫번째 인자로 '각도' 을 쓸 경우, 
+linear-gradient(nnn deg, color1, color2);
+color1으로 시작해 color2로 끝남.
+src = "https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient()"
+*/
